@@ -190,7 +190,9 @@ let currentMapObject
                     center: [33.605333, -112.073889],
                     zoom: 11,
                     layers: [outdoorsMapTileLayer,
-                             cityOutlineOverlayLayerGroup]
+                             cityOutlineOverlayLayerGroup,
+                             gridCrimesNonePredictionsOverlayLayerGroup,
+                             chloroplethNonePredictionsOverlayLayerGroup]
                 }
             );
 

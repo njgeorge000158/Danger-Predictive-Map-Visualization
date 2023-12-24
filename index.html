@@ -1,0 +1,129 @@
+<!--*******************************************************************************************
+ #
+ #  File Name:  index.html
+ #
+ #  File Description:
+ #      This html file, index.html, contains the html code for the City Crime Predictive 
+ #      Visualization Map.
+ #
+ #
+ #  Date            Description                             Programmer
+ #  ----------      ------------------------------------    ------------------
+ #  10/26/2023      Initial Development                     N. James George
+ #
+ #******************************************************************************************-->
+
+<!DOCTYPE html>
+
+<html lang = 'en'>
+
+  <head>
+
+    <meta charset = 'UTF-8'>
+
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+  
+    <meta http-equiv = 'X-UA-Compatible' content = 'ie=edge'>
+
+
+    <title>City Crime Visualization</title>
+
+    
+    <link rel = 'stylesheet' 
+      href = 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css'
+      integrity = 'sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=='
+      crossorigin = '' />
+
+    <link rel = 'stylesheet' href = 'https://fonts.googleapis.com/css?family = Georgia'>
+
+    <link rel = 'stylesheet' href = 'https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css'>
+
+    <link rel = 'stylesheet' type = 'text/css' href = './static/css/style.css'>
+
+
+    <script src = 'https://unpkg.com/leaflet@1.6.0/dist/leaflet.js'
+      integrity = 'sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=='
+      crossorigin = ''>
+    </script>
+
+    <script type = 'text/javascript' src = './static/js/leaflet-heat.js'></script>
+
+    <script src = 'https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js'></script>
+
+    <script src = 'https://d3js.org/d3.v7.min.js'></script>
+
+
+    <style>
+
+    .jumbotron {background: none;}
+  
+    .card-header {background-color: #2d10e6; font-weight: bold;}
+  
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class = 'row'
+      style = 'background-color:#CBF0D2; padding:15px; text-align:center;'>
+        
+      <div class = 'col-md-12 jumbotron text-center'>
+        
+        <h1><b>Crime Predictive Toolkit (K-Means/Phase 1)</b></h1>
+        
+      </div>
+  
+    </div>
+
+    <a href = './index.html'>
+
+      <button style = 'font-size: 18px'>
+        Annual/Grid (KM2)
+      </button>
+      
+    </a>
+  
+    <div id = 'mapid'></div>
+  
+    <div class = 'row'
+      style = "background:#CBF0D2 no-repeat center center /cover">
+      
+      <div class = 'col-md-12 jumbotron text-center'>
+      
+        <h1 style = 'font-size: 18px; font-weight: normal; padding: 14px;'>
+          © 2023 N. James George
+        </h1>
+      
+      </div>
+
+    </div>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2016_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2017_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2018_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2019_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2020_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2021_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2022_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2023_actual.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2023_predictions.js'></script>
+
+    <script type = 'text/javascript' src = './static/files/grid_crimes_2024_predictions.js'></script>
+
+    <script type = 'text/javascript' src = './static/js/config.js'></script>
+
+    <script type = 'text/javascript' src = './static/js/cityCrimePredictiveVisualizationLogic.js'></script>
+
+  </body>
+
+</html>

@@ -173,6 +173,7 @@ let currentMapObject
                 {
                     center: [33.605333, -112.073889],
                     zoom: 13,
+                    zoomControl: false,
                     layers: [outdoorsMapTileLayer,
                              cityOutlineOverlayLayerGroup,
                              policePrecinctsOverlayLayerGroup,

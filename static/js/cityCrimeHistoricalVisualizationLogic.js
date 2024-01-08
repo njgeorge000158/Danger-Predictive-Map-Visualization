@@ -176,6 +176,7 @@ const gridCrimesOverlayLayerGroupDictionary
                 'None': gridCrimesNonePredictionsOverlayLayerGroup
           };
 
+          
 // This map object is the current map and initially displays the outdoors map with the 
 // city overlay layers.
 let currentMapObject 

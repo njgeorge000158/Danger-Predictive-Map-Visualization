@@ -188,7 +188,7 @@ L.control
     (   
         baseMapTileLayerDictionary, 
         boundariesOverlayLayerGroupDictionary,
-        {collapsed: false}
+        {collapsed: true}
     )
     .addTo(currentMapObject);
 
@@ -197,7 +197,7 @@ L.control
     (   
         gridCrimesOverlayLayerGroupDictionary, 
         {},
-        {collapsed: false}
+        {collapsed: true}
     )
     .addTo(currentMapObject);
 
@@ -206,7 +206,7 @@ L.control
     (   
         predictiveMapsOverlayLayerGroupDictionary, 
         {},
-        {collapsed: false}
+        {collapsed: true}
     )
     .addTo(currentMapObject);
 

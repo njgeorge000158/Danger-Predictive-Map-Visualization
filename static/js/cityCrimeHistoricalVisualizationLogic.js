@@ -964,8 +964,8 @@ function DisplayUcrCrimesSubroutine
     {   
         L.circle
             (
-                ([tempList[i]['lat'],
-                  tempList[i]['lon']]), 
+                ([tempList[i]['grid_lat'],
+                  tempList[i]['grid_lon']]), 
                          {
                             radius: 350,
                             fillColor: ReturnColorFromOffensesFunction

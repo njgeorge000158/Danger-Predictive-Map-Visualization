@@ -960,8 +960,8 @@ function DisplayUcrCrimesSubroutine
     {   
         L.circle
             (
-                ([tempList[i]['lat'],
-                  tempList[i]['lon']]), 
+                ([tempList[i]['grid_lat'],
+                  tempList[i]['grid_lon']]), 
                          {
                             radius: 350,
                             fillColor: ReturnColorFromOffensesFunction
@@ -1036,8 +1036,8 @@ function DisplayCrimePredictiveHeatmapKMSubroutine
                 .push
                     (
                             [
-                                ucrCrimesList[i]['lat'],
-                                ucrCrimesList[i]['lon'],
+                                ucrCrimesList[i]['grid_lat'],
+                                ucrCrimesList[i]['grid_lon'],
                                 ucrCrimesList[i]['offense_count'] / 10.0
                             ]
                     )
